@@ -1,0 +1,505 @@
+<div id="wrapper">
+
+    <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Contact Manager</a>
+      </div>
+      <!-- Top Menu Items -->
+      <ul class="nav navbar-right top-nav">
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
+              <ul class="dropdown-menu message-dropdown">
+                  <li class="message-preview">
+                      <a href="#">
+                          <div class="media">
+                              <span class="pull-left">
+                                  <img class="media-object" src="http://placehold.it/50x50" alt="">
+                              </span>
+                              <div class="media-body">
+                                  <h5 class="media-heading"><strong>Dad</strong>
+                                  </h5>
+                                  <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                  <p>We need to get your mom a 
+                                  birthday gift!!...</p>
+                              </div>
+                          </div>
+                      </a>
+                  </li>
+                  <li class="message-preview">
+                      <a href="#">
+                          <div class="media">
+                              <span class="pull-left">
+                                  <img class="media-object" src="http://placehold.it/50x50" alt="">
+                              </span>
+                              <div class="media-body">
+                                  <h5 class="media-heading"><strong>Fred</strong>
+                                  </h5>
+                                  <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                  <p>Having fun working with
+                                  JSON??...</p>
+                              </div>
+                          </div>
+                      </a>
+                  </li>
+                  <li class="message-preview">
+                      <a href="#">
+                          <div class="media">
+                              <span class="pull-left">
+                                  <img class="media-object" src="http://placehold.it/50x50" alt="">
+                              </span>
+                              <div class="media-body">
+                                  <h5 class="media-heading"><strong>Diane</strong>
+                                  </h5>
+                                  <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                  <p>Don't stress out too bad!...</p>
+                              </div>
+                          </div>
+                      </a>
+                  </li>
+                  <li class="message-footer">
+                      <a href="#">Read All New Messages</a>
+                  </li>
+              </ul>
+          </li>
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+              <ul class="dropdown-menu alert-dropdown">
+                  <li>
+                      <a href="#"> Adam - <span class="label label-success">New</span></a>
+                  </li>
+                  <li>
+                      <a href="#"> Amy - <span class="label label-warning">Update</span></a>
+                  </li>
+                  <li>
+                      <a href="#"> Mark - <span class="label label-danger">Remove</span></a>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                      <a href="#">View All</a>
+                  </li>
+              </ul>
+          </li>
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Your Contacts <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                  <li>
+                      <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                  </li>
+                  <li>
+                      <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                  </li>
+                  <li>
+                      <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                      <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+      <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav side-nav">
+              <li id="all" class="active">
+                <a href="#"><i class="fa fa-fw fa-desktop"></i> View All Contacts</a>
+              </li>
+              <li id="new">
+                <a href="#"><i class="fa fa-fw fa-file"></i> Add A New Contact</a>
+              </li>
+              <li id="search">
+                <a href="#"><i class="fa fa-fw fa-dashboard"></i> Search Contacts</a>
+              </li>
+              <li id="find">
+                <a href="#"><i class="fa fa-fw fa-dashboard"></i> Find Contact</a>
+              </li>
+              <li id="update">
+                <a href="#"><i class="fa fa-fw fa-wrench"></i> Update A Contact</a>
+              </li>
+              <li id="remove">
+                <a href="#"><i class="fa fa-fw fa-wrench"></i> Remove A Contact</a>
+              </li>
+
+
+          </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+  </nav>
+
+  <div id="page-wrapper" class="home">
+
+      <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="row">
+              <div class="col-lg-12">
+                  <h1 class="page-header">
+                      Contact Manager
+                  </h1>
+                  <ol class="breadcrumb">
+                      <li>
+                          <i class="fa fa-dashboard"></i>  <a href="index.html">Home</a>
+                      </li>
+                      <li class="active">
+                          <i class="fa fa-desktop"></i> What Would You Want To Do Today?
+                      </li>
+                  </ol>
+              </div>
+          </div>
+          <!-- /.row -->
+
+          <!-- Main jumbotron for a primary marketing message or call to action -->
+          <div class="jumbotron">
+              <h1>Welcome To Contact Manager!</h1>
+              <p>Everyone's life is hectic and out of control but with Contact Manager it doesn't have to be. Check out the menu to the left to get started! Or just click here :)</p>
+              <p><a href="#" class="btn btn-primary btn-lg" role="button">Add A New Contact! </a>
+              </p>
+          </div>
+      </div>
+  </div>
+  <div id="page-wrapper" class="all_contacts">
+
+      <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="row">
+              <div class="col-lg-12">
+                  <h1 class="page-header">
+                      All Contacts
+                  </h1>
+                  <ol class="breadcrumb">
+                      <li>
+                          <i class="fa fa-dashboard"></i>  <a href="index.html">All </a>
+                      </li>
+                      <li class="active">
+                          <i class="fa fa-desktop"></i> Displaying Everyone
+                      </li>
+                  </ol>
+              </div>
+          </div>
+
+        <div id="result-container">
+          <table class="table" id="contact-table-results">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+
+    </div>
+  </div>
+
+<div id="page-wrapper" class="add_contact">
+
+      <div class="container-fluid">
+
+      <!-- Page Heading -->
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="page-header">
+              Add A Contact
+            </h1>
+            <ol class="breadcrumb">
+              <li>
+                <i class="fa fa-dashboard"></i>  <a href="index.html">Add </a>
+              </li>
+              <li class="active">
+                <i class="fa fa-desktop"></i> Add Someone To Contact Manager
+              </li>
+            </ol>
+          </div>
+        </div>
+
+
+        <div class="form-group add">
+          <form id = "add_cont" action="/contacts/new" method="post">
+            <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+            <div class="form-group">
+              <label for="first_name">First Name</label><br />
+              <input class="form-control" placeholder="First Name" type="text" name="first_name" /><br />
+            </div>
+            <div class="form-group">
+              <label for="last_name">Last Name</label><br />
+              <input class="form-control" placeholder="Last Name" type="text" name="last_name" /><br />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label><br />
+              <input class="form-control" placeholder="Email" type="email" name="email" /><br />
+            </div>
+            <div class="form-action">
+              <div  class="submit">
+                <input id = "addContact" class="btn btn-primary" type="submit" value="Add">
+              </div>
+              <div class="reset">
+                <input class="btn btn-primary" type="reset" value="Reset">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="mesg">
+        </div>
+
+
+
+
+
+    </div>
+  </div>
+
+
+
+
+  <div id="page-wrapper" class="search_contacts">
+
+      <div class="container-fluid">
+
+      <!-- Page Heading -->
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="page-header">
+              Search Contacts
+            </h1>
+            <ol class="breadcrumb">
+              <li>
+                <i class="fa fa-dashboard"></i>  <a href="index.html">Search </a>
+              </li>
+              <li class="active">
+                <i class="fa fa-desktop"></i> Search For Someone
+              </li>
+            </ol>
+          </div>
+        </div>
+
+      
+
+        <div class="container">
+          <div class="row">
+            <div id="searchForm" class="col-xs-6 col-xs-offset-3">
+              <div class="form-group">
+                <input name= "term" id="searchInput" type="text" placeholder="Search..." class="form-control">
+              </div>
+            </div>
+          </div>
+          <p><a href="#" class="btn btn-primary btn-lg" id="searchNow" role="button">Search </a></p>
+        </div>
+        
+
+        <div class="results_toggle">
+          <div id="result-container">
+            <table class="table" id="search_contact-table-results">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+
+
+
+  <div id="page-wrapper" class="find_contact">
+
+      <div class="container-fluid">
+
+      <!-- Page Heading -->
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="page-header">
+              Find A Contact
+            </h1>
+            <ol class="breadcrumb">
+              <li>
+                <i class="fa fa-dashboard"></i>  <a href="index.html">Find </a>
+              </li>
+              <li class="active">
+                <i class="fa fa-desktop"></i> Find Someone By Their ID
+              </li>
+            </ol>
+          </div>
+        </div>
+
+
+        <div class="container">
+          <div class="row">
+            <div id="searchForm" class="col-xs-6 col-xs-offset-3">
+             <form id="f_form">
+              <div id="findForm" class="form-group">
+                <label for="findId">ID</label><br />
+                <input id="findId" name="findId" type="number" placeholder="Search By ID" class="form-control">
+              </div>
+             </form>
+            </div>
+          </div>
+          <p><a id="findCon" href="#" class="btn btn-primary btn-lg" role="button">Find! </a></p>
+        </div>
+      </div>
+
+      <div class="results_toggle">
+          <div id="find-result-container">
+            <table class="table" id="find_contact-table-results">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+  </div>   
+
+
+
+
+
+<div id="page-wrapper" class="update_contact">
+
+      <div class="container-fluid">
+
+      <!-- Page Heading -->
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="page-header">
+              Update A Contact
+            </h1>
+            <ol id="update_top" class="breadcrumb">
+              <li>
+                <i class="fa fa-dashboard"></i>  <a href="index.html">Update </a>
+              </li>
+              <li class="active">
+                <i class="fa fa-desktop"></i> Update Someone In Contact Manager
+              </li>
+            </ol>
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <form id = "update_cont" action="/contacts/:id" method="put">
+            <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+            <!-- all your input fields here.... -->
+            <div class="form-group">
+              <label for="id">ID</label><br />
+              <input id="findUpId" class="form-control" placeholder="ID" type="number" name="id" /><br />
+            </div>
+            <div class="form-group">
+              <label for="first_name">First Name</label><br />
+              <input class="form-control" placeholder="First Name" type="text" name="first_name" /><br />
+            </div>
+            <div class="form-group">
+              <label for="last_name">Last Name</label><br />
+              <input class="form-control" placeholder="Last Name" type="text" name="last_name" /><br />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label><br />
+              <input class="form-control" placeholder="Email" type="email" name="email" /><br />
+            </div>
+            <div class="form-action">
+              <div class="submit">
+                <input id="updateCon" class="btn btn-primary" type="submit" value="Update">
+              </div>
+              <div class="reset">
+                <input  class="btn btn-primary" type="reset" value="Reset">
+              </div>
+            </div>
+          </form>
+            <div class="upMsg">
+            </div>
+        </div>
+        
+
+
+
+
+
+    </div>
+  </div>
+
+
+<div id="page-wrapper" class="remove_contact">
+
+      <div class="container-fluid">
+
+      <!-- Page Heading -->
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="page-header">
+              Remove A Contact
+            </h1>
+            <ol class="breadcrumb">
+              <li>
+                <i class="fa fa-dashboard"></i>  <a href="index.html">Remove </a>
+              </li>
+              <li class="active">
+                <i class="fa fa-desktop"></i> Remove Someone By Their ID
+              </li>
+            </ol>
+          </div>
+        </div>
+
+
+        <div class="container">
+          <div class="row">
+            <div id="searchForm" class="col-xs-6 col-xs-offset-3">
+             <form id="del" action="/contacts/:id" method="delete">
+              <div class="form-group">
+                <label for="id">ID</label><br />
+                <input id="idDel" name="idDel" type="text" placeholder="Remove By ID" class="form-control">
+              </div>
+             </form>
+            </div>
+          </div>
+          <p><a id="deleteCon" href="#" class="btn btn-primary btn-lg" role="button">Remove Contact </a></p>
+        </div>
+        <div id="removeMsg">
+        </div>
+      </div>
+  </div>
+
+
+
+          
+</div>
+
+
+    <!-- /.container-fluid -->
+
+
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+

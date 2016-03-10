@@ -1,0 +1,30 @@
+/*.all_contacts, .add_contact, .search_contacts, .find_contact, .update_contact, .remove_contact {
+  display: none;
+}*/
+
+#searchForm {
+  margin-left: 0%;
+}
+
+.form-group {
+  width: 552px;
+  margin-bottom: 0px;
+}
+
+.submit {
+  float: left;
+}
+
+.reset {
+  float: right;
+}
+.form-action {
+    width: 550px;
+    height: 200px;
+}
+
+
+#searchForm {
+  padding-bottom: 30px;
+}
+
